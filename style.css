@@ -280,6 +280,7 @@ section{
     text-transform: capitalize;
     color: #FFFFFF;
     background: transparent;
+    border: none;
 }
 
 ul#social-link {
