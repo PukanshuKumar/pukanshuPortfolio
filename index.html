@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pukanshu Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="container">
+    <nav>
+        <div id="menu" class="dropdown">
+            <div class="menu-icon"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="icon-line-O"></span>
+                <span class="icon-line-t"></span>
+
+            </div>
+            <ul  class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a  class="home" data-link="home" onClick="toSection(this)">Home</a></li>
+                <li><a class="about" data-link="about" onClick="toSection(this)">About</a></li>
+                <li><a class="skills" data-link="skills" onClick="toSection(this)">Skills</a></li>
+                <li><a class="project" data-link="project" onClick="toSection(this)">Project</a></li>
+                <li><a class="contact" data-link="contact" onClick="toSection(this)">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-img">
+            <a class="contact"  data-link="contact" onClick="toSection(this)">
+                <img src="imgs/getintouch.svg" class="img-fluid" alt="get in touch">
+            </a>
+        </div>
+    </nav>
+    </div>
+
+    <div class="home-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center intro">
+                    <h1 class="title">Pukanshu</h1>
+                    <h2 class="sub-title">Website Designer</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="down-box">
+            <a class="about"  data-link="about" onClick="toSection(this)"><img src="/imgs/down-arrow.svg" class="img-fluid"></a>
+        </div>
+        <!-- <div class="theme-box">
+            <a id="night"><img src="imgs/moon.svg" class="img-fluid"></a>
+            <a id="sun"><img src="imgs/sun.svg" class="img-fluid"></a>
+            <span id="circle"></span>
+        </div> -->
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <div class="row g-4 mb-5">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="title">About Me</h1>
+            </div>
+            <div class="col-md-5">
+                <img src="imgs/user.png" class="img-fluid profile-img">
+            </div>
+            <div class="col-md-7 para my-auto">
+                <h4>hello!</h4>
+                <p class="pb-5"> I am Pukanshu Kumar a Front-End developer based in New Delhi, India. I love writing
+                    clean code, and pushing my skills to the limit. My interests include joining an exciting team of
+                    passionate people, personal growth and make a Positive Impact on Clients, Coworkers, and The
+                    Internet using My Skills and Experience to Design Compelling and Attractive Websites.
+                    I love combining the worlds of logic and creative design to make eye-catching, accessible, and
+                    user-friendly websites.
+                    <br><br>
+                    I'm excited to make the leap and continue refining my skills with the right company.
+                </p>
+                <a href="#" class="action-btn" target="_blank">View Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="title">Skills</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/html.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">HTML</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/css.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">css</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/js.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">JAVASCRIPT + es6</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/bootstrap.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">BOOTSTRAP</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/jquery.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">jquery</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="imgs/responsive.svg" class="img-fluid skill-img">
+                    <h5 class="skill-title">responsive Design</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<section id="project" class="pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="title">Project</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="row g-5" id="proj-wrapper">
+                    <div class="col-md-12 mb-5">
+                        <div class="row">
+                            <div class="col-md-3 position-relative my-auto">
+                                <div class="proj-card">
+                                    <div class="lang-bar">
+                                        <ul>
+                                            <li>Html5</li>
+                                            <li>css3</li>
+                                            <li>js</li>
+                                            <li>bootstrap</li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="proj-title">Juno Collage Site</h3>
+                                    <p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio praesentium tempore unde quisquam, magni suscipit inventore veniam laborum blanditiis, quibusdam qui voluptatem minima! Accusamus magnam dolorum saepe eligendi unde.</p>
+                                    <button class="action-btn">VIEW SITE</button>
+                                </div>
+                            </div>
+                            <div class="col-md-9 text-end">
+                                <img src="imgs/screen-1.png" class="proj-img img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">                    
+                            <div class="col-md-9 text-start">
+                                <img src="imgs/screen-1.png" class="proj-img img-fluid">
+                            </div>
+                            <div class="col-md-3 position-relative my-auto">
+                                <div class="proj-card even">
+                                    <div class="lang-bar">
+                                        <ul>
+                                            <li>Html5</li>
+                                            <li>css3</li>
+                                            <li>js</li>
+                                            <li>bootstrap</li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="proj-title">Juno Collage Site</h3>
+                                    <p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio praesentium tempore unde quisquam, magni suscipit inventore veniam laborum blanditiis, quibusdam qui voluptatem minima! Accusamus magnam dolorum saepe eligendi unde.</p>
+                                    <button class="action-btn">VIEW SITE</button>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<section id="contact" class="pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="title">Contact</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="imgs/contact.svg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="name-input" name="name" placeholder="Name">
+                        <label for="floatingPassword">Your Name</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" name="email" id="email-Input" placeholder="name@example.com">
+                        <label for="floatingInput">Your Email</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message-Textarea" style="height: 200px"></textarea>
+                        <label for="floatingTextarea2">Your Message</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="submit-btn">Get In Touch</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4"><button id="backTop">Back to Top</button></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 d-flex justify-content-between footer-wrapper">
+                <span class="fs-6">DESIGNED BY PUKANSHU KUMAR 2022</span>
+                <ul id="social-link">
+                    <li><a href="https://www.linkedin.com/in/pukanshu-k-42639721a/" target="_blank"><img src="imgs/linkedIn.svg" class="img-fluid"></a></li>
+                    <li><a href="https://github.com/PukanshuKumar" target="_blank"><img src="imgs/git.svg" class="img-fluid"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    // $(document).ready(function () {
+    //     $("menu-icon").click(function () {
+    //         $("menu-icon").addClass("intro");
+    //     });
+    // });    
+
+    // var menu = document.getElementById("toggler");
+    // var flag = false;
+    // menu.addEventListener("click",function(){
+    //     // console.log(this)
+    //     if(flag === true){
+    //         this.classList.add("open");
+    //         return flag = false;
+    //     }else{
+    //         this.classList.remove("open");
+    //         return flag = true;
+    //     }
+    // })
+
+
+//     $("#backTop").click(function() {
+//      $("html, body").animate({ scrollTop: 0 }, "slow");
+//      return false;
+//   });
+
+var bTop = document.getElementById("backTop");
+
+bTop.addEventListener("click",function(){
+    window.scrollTo(0,0)
+})
+
+
+function toSection(ele){
+    // var eleId = ele.dataset.link;
+    var eleId = ele.classList.value;
+document.getElementById(eleId).scrollIntoView({behavior: 'smooth'});
+}
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
