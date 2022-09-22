@@ -85,6 +85,7 @@ ul.dropdown-menu.show li a {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     font-size: 1.2rem !important;
+    cursor: pointer;
 }
 
 .menu-icon.menu-icon.show~ul.dropdown-menu.show{
@@ -118,6 +119,11 @@ ul.dropdown-menu.show li a {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.contact-img{
+    cursor: pointer;
 }
 
 
@@ -167,10 +173,16 @@ span#circle {
     text-decoration: none;
     font-size: 1.5rem;
     letter-spacing: 5px;
-    color: #5bcefa;
+    color: #5bcefa !important;
     border: 2px solid #5bcefa;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    transition: all ease 0.5s;
+}
+
+.action-btn:hover {
+    color: #fff !important;
+    background-color: #5bcefa;
 }
 
 .skill-box {
@@ -250,6 +262,8 @@ padding: 1rem 0;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 2rem;
+
 }
 
 .proj-card .action-btn {
@@ -261,7 +275,11 @@ padding: 1rem 0;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: transparent;
-    margin-top: 2rem;
+}
+
+.proj-card .action-btn:hover {
+    color: #fff;
+    background-color: #5bcefa;
 }
 
 .submit-btn{
@@ -281,12 +299,14 @@ section{
     color: #FFFFFF;
     background: transparent;
     border: none;
+    margin-bottom: 0;
 }
 
 ul#social-link {
     list-style-type: none;
     display: flex;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 ul#social-link li {
@@ -301,5 +321,108 @@ footer span{
 
 .footer-wrapper {
     border-top: 1px solid #fff;
-    padding-top: 1rem;
+    padding: 1rem;
+}
+
+.skill-hover-img{
+    display: none;
+    transform: scale(1.0);
+    transition: all ease 1s;
+}
+
+.skill-box:hover .skill-hover-img{
+    display: block;
+    transform: scale(1.1);
+}
+
+.skill-box:hover .skill-img{
+    display: none;
+}
+
+
+
+@media (max-width:1000px){
+    .proj-card {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: black;
+        border-top: 10px solid #5BCEFA;
+        padding: 1rem;
+        margin-top: 2rem;
+
+    }
+
+    .proj-card.even {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0%;
+        left: 0%;
+        transform: translate(0,0);
+
+        margin-top: 2rem;
+    }
+    .proj-card .proj-title {
+        font-size: 2rem;
+        color: #5BCEFA;
+        padding: 0.5rem 0;
+    }
+
+    .lang-bar>ul {
+        font-size: 1rem;
+    }
+
+    #backTop {
+        font-size: 18px;
+    }
+
+    .para p {
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.766);
+        line-height: 1.8;
+        font-weight: 100;
+    }
+
+    .action-btn {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    div#menu {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .menu-icon.menu-icon.show~ul.dropdown-menu.show {
+        opacity: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .menu-icon>span {
+        content: ' ';
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 2rem;
+        height: 2px;
+        transition: 0.1s all ease;
+    }
+
+    footer span {
+        color: #ccc;
+        font-size: 0.6rem;
+    }
+
+    ul#social-link li {
+        width: 1rem;
+        height: auto;
+        margin-left: 1rem;
+    }
 }
